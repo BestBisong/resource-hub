@@ -1,0 +1,114 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="booklanding.css">
+        <title>Contact Us</title>
+        <style>
+    .form-group {
+    margin-bottom: 15px; 
+    }
+
+    .form-group label {
+    display: block;
+    font-size: 14px; 
+    font-weight: 600;
+    color: #ffffff; 
+    margin-bottom: 5px; 
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+    width: 100%;
+    padding: 10px; 
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    }
+
+    .form-button {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    }
+
+    .form-button:hover {
+    background-color: #2980b9;
+    }
+
+
+    .content {
+    max-width: 90%;
+    margin: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 10px; 
+    }
+
+    .form-button {
+        width: 100%;
+        text-align: center;
+    }
+    }
+
+        </style>
+        </head>
+        <body>
+            <div class="hero">
+            <div class="navbar">
+                <div class="logo"></div>
+                <button type="button"><a href="login_p.html" style="text-decoration: none; color:white;" >Sign Up</a></button>
+            </div>
+            <div class="content">
+                <h1 style="color: black;">Contact Us</h1>
+                <p>If you have any questions, suggestions, or need assistance, feel free to reach out to us. We're here to help and would love to hear from you.</p>
+                
+                    <form action="https://formspree.io/f/mldjjwyp" method="POST" class="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                        <button type="submit" class="form-button">Send Message</button>
+                    </form>
+                    
+                    
+
+            <div class="side-bar">
+                    <a href="index.html"><img src="https://i.postimg.cc/L5MB53VW/459-A8686-B8-E6-4031-89-B7-D8-F563-E8-BF26.png" class="menu"></a>
+                <div class="social-links">
+                    <a href="https://instagram.com"><img src="https://i.postimg.cc/fbSMTcym/D159198-A-E5-DC-43-A2-B587-5-B88-F6-CA72-B5.png"></a>
+                    <a href="https://facebook.com"><img src="https://i.postimg.cc/mD63NGR0/2762-A9-DB-BB13-4-E9-E-BDB4-E325-BF3-B16-EC.png"></a>
+                    <a href="https://twitter.com"><img src="https://i.postimg.cc/LsGs9vpF/56-DCB8-C6-86-C5-45-E1-9-BE9-021708-D7-CF62.png"></a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </body>
+            
+        </html>

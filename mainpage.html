@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResearchHub - Your Resource Recommender</title>
+    <link id="theme-link" rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+   
+        <img src="https://img.freepik.com/premium-photo/serene-atmosphere-empty-college-library-captures-essence-education-concept-education-library-serenity-college-atmosphere_918839-78188.jpg" class="header-image" alt="Library atmosphere">
+        <h1>📚 ResearchHub</h1>
+        <h3>Your Gateway to Books, Articles, Journals, and More</h3>
+
+       
+        <div id="auth-section">
+            <button id="saved-books-btn"><a href="saved_book.html">Saved Books</a></button>
+        </div>
+
+     
+        <div class="search-container">
+            <form id="search-form">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="🔍 Search resources by title or author" 
+                    value=""
+                >
+                <select id="genre-select">
+                    <option value="All" selected>All Categories</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Science">Science</option>
+                    <option value="Non-fiction">Non-fiction</option>
+                    <option value="Videos">Articles</option>
+                    <option value="Journals">Journals</option>
+                </select>
+                <button type="submit" style="border-radius: 5px; text-decoration: none;">Search</button>
+ 
+                    <button id="theme-toggle" style="margin: 20px;">Switch to Dark Mode</button>
+                    </div> 
+            </form>
+
+
+
+       
+        <div class="resources-grid">
+       
+        </div>
+
+    
+        <footer>
+            <hr><br>
+            <p>Made with 💙 by ResearchHub</p>
+        </footer>
+    </div>
+
+   
+</body>
+</html>

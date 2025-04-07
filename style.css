@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+#auth-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#saved-books-btn {
+    background: linear-gradient(#104e5e, #000729);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#saved-books-btn:hover {
+    background: linear-gradient(#1e98b7, #000729);
+}
+
+#saved-books-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#clear-saved-books{
+    background: linear-gradient(#104e5e, #000729);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#clear-saved-books:hover {
+    background: #ff1c1c;
+}
+.btn a{
+    color:white;
+    text-decoration: none;
+}
+
+.btn{
+    background: linear-gradient(#104e5e, #000729);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+}
+
+
+.header-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #555;
+}
+
+.search-container {
+    background: linear-gradient(#104e5e, #000729);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#search-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fff;
+}
+
+#genre-select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search-form button {
+    padding: 10px 20px;
+    background: linear-gradient(#1c7c94, #020c41);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#search-form button:hover {
+    background-color: #0056b3;
+}
+
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+
+
+.resource-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.book-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.book-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0.5rem;
+}
+
+.genre-pill {
+    background: linear-gradient(#104e5e, #000729);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.resource-type {
+    background: linear-gradient(#104e5e, #000729);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.book-details {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+.book-details button{
+    border-radius: 5px;
+    color:white;
+    background-color: #06124d;
+}
+
+.view-more a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+
+.view-more a:hover {
+    background-color: #0056b3;
+}
+
+
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f4f7f6;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Books</title>
+    <link id="theme-link" rel="stylesheet" href="style.css"> <!-- Light theme by default -->
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Saved Books</h1>
+        <div class="resources-grid" id="saved-books-grid">
+          
+        </div>
+
+
+        <button id="clear-saved-books">Clear Saved Books</button>
+        <button class="btn"><a href="loading_page.html">Back</a></button>
+
+    
+        <button  class="btn" id="theme-toggle" style="margin-top: 20px;">Switch to Dark Mode</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const savedBooksGrid = document.getElementById('saved-books-grid');
+
+            // Load saved books from localStorage
+            function loadSavedBooks() {
+                let savedBooks = JSON.parse(localStorage.getItem('savedBooks')) || [];
+                savedBooksGrid.innerHTML = ''; // Clear the grid
+
+                if (savedBooks.length > 0) {
+                    savedBooks.forEach(book => {
+                        const bookCard = document.createElement('div');
+                        bookCard.classList.add('resource-card');
+                        bookCard.innerHTML = `
+                            <img src="${book.cover}" class="book-image" alt="${book.title}">
+                            <h3>${book.title}</h3>
+                            <p>by ${book.author || 'Unknown Author'}</p>
+                        `;
+                        savedBooksGrid.appendChild(bookCard);
+                    });
+                } else {
+                    savedBooksGrid.innerHTML = '<p>No saved books found.</p>';
+                }
+            }
+
+            // Load saved books on page load
+            loadSavedBooks();
+
+            // Clear saved books button
+            document.getElementById('clear-saved-books').addEventListener('click', function () {
+                localStorage.removeItem('savedBooks');
+                loadSavedBooks(); // Refresh the grid
+                alert('All saved books have been cleared.');
+            });
+        });
+    </script>
+</body>
+</html>
