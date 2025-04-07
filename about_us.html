@@ -1,35 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="booklanding.css">
-  <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #006b8f, #093f46);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+            padding: 20px;
+        }
+
+        .hero .content {
+            text-align: center;
+            max-width: 700px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background: #fff;
+            color: #008da0;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background: #008da0;
+            color: #fff;
+        }
+
+        .side-bar {
+            width: 70px; /* Reduced width for better aesthetics */
+            height: 100vh;
+            background: linear-gradient(#104e5e, #000729);
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding-top: 40px; /* Added padding for better spacing */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu {
+            display: block;
+            width: 30px; /* Reduced the menu icon size */
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+
+        .menu img {
+            width: 100%; /* Ensures the image fits within the assigned width */
+            height: auto;
+        }
+
+        .social-links img, .useful-links img {
+            width: 25px; /* Adjusted icon size for better alignment */
+            margin: 12px 0; /* Adjusted spacing */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-links {
+            text-align: center;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+        .useful-links {
+            text-align: center;
+            position: absolute;
+            top: 65%; /* /* Added to push the section down */
+        }
+
+        .side-bar a {
+            text-decoration: none;
+            color: white;
+            margin: 20px 0;
+            display: block;
+            font-size: 1.1rem; /* Slightly smaller font for better readability */
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .side-bar a:hover {
+            color: #008da0;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 50px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+
+            .side-bar {
+                width: 60px; /* Reduced width for mobile view */
+                padding-top: 20px;
+            }
+
+            .social-links img {
+                width: 22px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="hero">
-      <div class="navbar">
-        <img src="https://i.postimg.cc/P5hwG7F0/EBE75234-71-B8-45-B7-A2-CF-C6467455759-F.png" class="logo">
-        <button type="button"><a href="login_p.html" style="text-decoration: none; color:white;" >Sign Up</a></button>
-      </div>
-      <div class="content">
-        <h1 style="color: black;">About Us</h1>
-        <p>Welcome to Resource Hub, your ultimate resource hub for discovering research materials and recommendations tailored to your needs.<br> At Research Hub, we are committed to providing an expansive library of research materials, ensuring that knowledge is easily accessible to everyone.<br> Our platform is designed for ease of use, whether you're a student, academic, or just an avid reader looking for resources.</p>
 
-        <p>Founded on the principle that knowledge should be shared, Resource Hub continues to expand its library and tools to serve a growing community. <br>We believe that with the right resources, anyone can grow, learn, and succeed.</p>
-
-        <p>Join us on this journey of discovery and let Research Hub be your guide to unlocking endless learning opportunities.</p>
-        
-        <br>
-        <button type="button"><a href="contact.html" style="text-decoration: none; color: white;">Contact Us</a></button>
-        </div>
-        <div class="side-bar">
-          <a href="index.html"><img src="https://i.postimg.cc/L5MB53VW/459-A8686-B8-E6-4031-89-B7-D8-F563-E8-BF26.png" class="menu"></a>
-        <div class="social-links">
-            <a href="https://instagram.com"><img src="https://i.postimg.cc/fbSMTcym/D159198-A-E5-DC-43-A2-B587-5-B88-F6-CA72-B5.png"></a>
-            <a href="https://facebook.com"><img src="https://i.postimg.cc/mD63NGR0/2762-A9-DB-BB13-4-E9-E-BDB4-E325-BF3-B16-EC.png"></a>
-            <a href="https://twitter.com"><img src="https://i.postimg.cc/LsGs9vpF/56-DCB8-C6-86-C5-45-E1-9-BE9-021708-D7-CF62.png"></a>
-        </div>
+<div class="hero">
+    <div class="content">
+        <h1>Welcome to Ashivel Resource Hub</h1>
+        <p>Your go-to destination for discovering tailored research materials and recommendations.</p>
+        <p>We believe in empowering students, researchers, and curious minds by providing an ever-growing library of resources.</p>
+        <a href="contact.php" class="btn">Contact Us</a>
     </div>
+</div>
+
+<div class="side-bar">
+    <a href="index.php" class="menu" title="Home">
+        <img src="https://i.postimg.cc/L5MB53VW/459-A8686-B8-E6-4031-89-B7-D8-F563-E8-BF26.png" alt="Home">
+    </a>
+    <div class="social-links">
+        <a href="https://instagram.com" title="Follow us on Instagram"><img src="https://i.postimg.cc/fbSMTcym/D159198-A-E5-DC-43-A2-B587-5-B88-F6-CA72-B5.png" alt="Instagram"></a>
+        <a href="https://facebook.com" title="Follow us on Facebook"><img src="https://i.postimg.cc/mD63NGR0/2762-A9-DB-BB13-4-E9-E-BDB4-E325-BF3-B16-EC.png" alt="Facebook"></a>
+        <a href="https://twitter.com" title="Follow us on twitter"><img src="https://i.postimg.cc/LsGs9vpF/56-DCB8-C6-86-C5-45-E1-9-BE9-021708-D7-CF62.png" alt="Twitter"></a>
+    </div>
+    <div class="useful-links">
+        <a href="contact.php" title="Contact Us"><img src="contact (1).png" alt="Contact"></a>
+        <a href="about_us.php" title="About"><img src="about.png" alt="About"></a>
+    </div>
+</div>
+
 </body>
 </html>
